@@ -46,8 +46,10 @@ function saludo(idioma) {
    } else if (idioma === 'mandarin') {
       return ('Ni Hao!');
    } else if (idioma === 'ingles') {
-      return ('Hello');
-   } else return ('Hola');
+      return ('Hello!');
+   } else {
+      return ('Hola!');
+   }
 }
 
 function colors(color) {
@@ -113,7 +115,7 @@ function fizzBuzz(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if (num % 3 === 0 && num % 5 === 0) {
-      return ('fizbuzzz');
+      return ('fizzbuzz');
    } else if (num % 5 === 0) {
       return ('buzz');
    } else if (num % 3 === 0 ) {
@@ -132,7 +134,7 @@ function operadoresLogicos(num1, num2, num3) {
    if (num1 > num2 && num1 > num3 && num1 > 0) {
       return ('Numero 1 es mayor y positivo');
    } else if (num1 < 0 || num2 < 0 || num3 <0) {
-      return ('Hay numeros negativos');
+      return ('Hay negativos');
    } else if (num3 > num1 && num3 > num2) {
       num3 = num3 + 1;
       return (num3);
@@ -166,14 +168,14 @@ function esVerdadero(valor) {
    // Tu código:
    if (valor === true){
       return ('Soy verdadero');
-   } else return ('Soy Falso');
+   } else return ('Soy falso');
 }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   if (num > 99) {
+   if (num > 99 && num < 1000) {
       return (true);
    } else return (false);
 }

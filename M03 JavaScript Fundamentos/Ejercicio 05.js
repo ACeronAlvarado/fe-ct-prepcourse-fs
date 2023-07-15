@@ -11,7 +11,7 @@ function esPositivo(num) {
    if (num > 0) {
       return ("Es positivo");
    } else if (num < 0) {
-      return ("Es Negativo");
+      return ("Es negativo");
    } else {
       return false;
    }
@@ -48,7 +48,8 @@ function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
-   return (lado * 4);
+   var perimetro = lado * 4;
+   return (perimetro);
 }
 
 function areaDelTriangulo(base, altura) {
@@ -72,13 +73,13 @@ function esVocal(letra) {
    if (letra === 'a') {
       return ('Es vocal');
       } else if (letra === 'e') {
-          return ('Es Vocal');
+          return ('Es vocal');
       } else if (letra === 'i') {
           return ('Es vocal');
       } else if (letra === 'o') {
-          return ('Es Vocal');
+          return ('Es vocal');
       } else if (letra === 'u') {
-          return ('Es Vocal');
+          return ('Es vocal');
       } else if (letra != 'a') {
               return ('Dato incorrecto');
           }
